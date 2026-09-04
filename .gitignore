@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Output del gioco (salvataggi, screenshot F12, report di benchmark)
+super_lumen.log
+save.json
+benchmark_*.json
+screenshot_*.png
