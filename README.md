@@ -4,6 +4,11 @@ Un platform 2.5D in **un singolo file Python**. Cinque mondi, renderer OpenGL
 scritto a mano, tutto generato proceduralmente a runtime: mesh, materiali,
 shader GLSL, livelli, musica ed effetti sonori. Nessun asset esterno.
 
+> **Interamente creato da GPT-6 Astra, in una singola risposta.**
+> Modello `gpt-6-astra` di OpenAI, tramite ChatGPT Pro (piano a pagamento,
+> 100–200 $ al mese). Un solo prompt: nessuna iterazione, nessuna correzione
+> a mano, nessun debugging umano.
+
 ![Giardini dell'Aurora](docs/screenshot.png)
 
 *Il gioco è in italiano.*
@@ -12,13 +17,18 @@ shader GLSL, livelli, musica ed effetti sonori. Nessun asset esterno.
 
 ## Origine
 
-Questo gioco è stato prodotto da **ChatGPT (abbonamento Pro, interfaccia web)
-in una singola risposta** — un solo prompt, nessuna iterazione, nessun
-debugging manuale. 2.888 righe, 24 classi, 144 funzioni, funzionante al primo
-avvio.
+Questo gioco è stato scritto da **GPT-6 Astra** — il modello che OpenAI ha
+annunciato il 3 settembre 2026 — attraverso **ChatGPT Pro**, il piano a
+pagamento da **100–200 $ al mese**.
 
-Il repository esiste come artefatto di quel risultato: il file è pubblicato
-esattamente com'è stato generato.
+È stato prodotto **in una singola risposta, da un singolo prompt**: nessuna
+iterazione, nessun intervento manuale sul codice, nessuna sessione di
+debugging. 2.888 righe, 24 classi, 144 funzioni, funzionante al primo avvio.
+
+Il repository esiste come artefatto di quel risultato. Il file
+`super_lumen.py` è pubblicato **esattamente come è stato generato**: non è
+stata modificata una riga. Tutto il resto in questo repo — README, licenza,
+`.gitignore` — è contorno aggiunto dopo, non tocca il gioco.
 
 ## Cosa c'è dentro
 
