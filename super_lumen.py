@@ -1860,8 +1860,8 @@ class Scene:
         def model(mesh,px,py,pz,sx,sy,sz,col,**kw):
             self.add(mesh,(x+px,y+(py+bob)*scale*squash,pz),
                      (sx/max(squash,.8),sy*scale*squash,sz),col,**kw)
-        red=(.88,.16,.19);teal=(.12,.57,.63);skin=(1.,.75,.53)
-        if p.power==3: red=(1.,.87,.61);teal=(.84,.25,.18)
+        red=(.42,.24,.74);teal=(.12,.57,.63);skin=(1.,.75,.53)
+        if p.power==3: red=(.99,.86,.44);teal=(.85,.28,.56)
         model("sphere",0,.47,0,.53,.54,.40,teal,rough=.46)
         model("round",0,.33,.10,.42,.24,.28,teal)
         for side in (-1,1):
@@ -1877,7 +1877,6 @@ class Scene:
             model("sphere",side*.105+p.facing*.035,.87,.239,.105,.13,.06,(.98,.99,1.))
             model("sphere",side*.105+p.facing*.05,.875,.276,.051,.073,.024,(.025,.09,.13),rough=.22)
             model("round",side*.108+p.facing*.02,.953,.255,.11,.032,.03,(.22,.10,.09),rz=-side*.10)
-        model("round",.02,.70,.235,.15,.035,.028,(.44,.18,.12))
         model("sphere",0,1.04,-.02,.66,.31,.56,red,rough=.48)
         model("round",p.facing*.06,.975,.16,.67,.07,.48,red,rough=.4)
         # Original Lumen badge, not a Nintendo logo.

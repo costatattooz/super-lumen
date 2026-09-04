@@ -4,10 +4,8 @@ Un platform 2.5D in **un singolo file Python**. Cinque mondi, renderer OpenGL
 scritto a mano, tutto generato proceduralmente a runtime: mesh, materiali,
 shader GLSL, livelli, musica ed effetti sonori. Nessun asset esterno.
 
-> **Interamente creato da GPT-6 Astra, in una singola risposta.**
-> Modello `gpt-6-astra` di OpenAI, tramite ChatGPT Pro (piano a pagamento,
-> 100–200 $ al mese). Un solo prompt: nessuna iterazione, nessuna correzione
-> a mano, nessun debugging umano.
+> Scritto interamente da un modello linguistico in **una singola risposta**,
+> da un solo prompt. Nessuna iterazione, nessuna correzione a mano.
 
 ![Giardini dell'Aurora](docs/screenshot.png)
 
@@ -17,18 +15,32 @@ shader GLSL, livelli, musica ed effetti sonori. Nessun asset esterno.
 
 ## Origine
 
-Questo gioco è stato scritto da **GPT-6 Astra** — il modello che OpenAI ha
-annunciato il 3 settembre 2026 — attraverso **ChatGPT Pro**, il piano a
-pagamento da **100–200 $ al mese**.
+Il codice di questo gioco è stato **generato interamente da un modello
+linguistico** (GPT-6 Astra di OpenAI) **in una singola risposta, da un singolo
+prompt**: nessuna iterazione, nessun intervento manuale sul codice, nessuna
+sessione di debugging. 2.888 righe, 24 classi, 144 funzioni, funzionante al
+primo avvio.
 
-È stato prodotto **in una singola risposta, da un singolo prompt**: nessuna
-iterazione, nessun intervento manuale sul codice, nessuna sessione di
-debugging. 2.888 righe, 24 classi, 144 funzioni, funzionante al primo avvio.
+Il repository esiste per documentare quel risultato. Non è materiale
+promozionale e non è affiliato a OpenAI né a nessun altro fornitore: il
+modello è indicato perché senza quell'informazione il repo sarebbe
+disonesto, non per pubblicizzarlo.
 
-Il repository esiste come artefatto di quel risultato. Il file
-`super_lumen.py` è pubblicato **esattamente come è stato generato**: non è
-stata modificata una riga. Tutto il resto in questo repo — README, licenza,
-`.gitignore` — è contorno aggiunto dopo, non tocca il gioco.
+### Cosa è stato modificato dopo la generazione
+
+Il file generato è conservato **intatto** nella cronologia git, al tag
+[`generated-original`](../../tree/generated-original): quello è l'artefatto
+one-shot, verificabile riga per riga.
+
+Sul branch `main` il file ha **tre righe di differenza**, puramente estetiche:
+la palette del protagonista è stata cambiata e un dettaglio del volto rimosso,
+per dare al personaggio un aspetto proprio. Nessuna logica di gioco, nessun
+livello, nessuno shader è stato toccato — i 22 test passano identici prima e
+dopo. Il diff completo è una riga di `git diff`:
+
+```bash
+git diff generated-original main -- super_lumen.py
+```
 
 ## Cosa c'è dentro
 
@@ -144,13 +156,21 @@ Il test grafico ha bisogno di un display:
 python3 super_lumen.py --smoke-test
 ```
 
-## Nota su Nintendo
+## Originalità dei contenuti
 
-Questo è un omaggio ai platform Mario-like, non un prodotto Nintendo e non è
-in alcun modo affiliato o approvato da Nintendo. **Non contiene alcun asset,
-codice, musica o dato Nintendo**: ogni mesh, texture, traccia audio e livello
-è generato dal codice in questo repository. I nomi, i mondi e i personaggi
-sono originali.
+Ogni mesh, texture, traccia audio, livello e shader di questo gioco è
+**generato dal codice in questo repository** a ogni avvio. Il progetto non
+contiene, non incorpora e non distribuisce asset, codice, audio o dati
+appartenenti a terzi: non c'è un solo file di risorse sul disco, perché non
+c'è alcun file di risorse.
+
+Nomi, mondi, personaggi e colonna sonora sono originali. Il gioco appartiene
+al genere dei platform a scorrimento, le cui meccaniche — correre, saltare,
+colpire blocchi, schiacciare nemici — sono idee di gioco non tutelabili in
+quanto tali, e sono comuni a decine di titoli indipendenti.
+
+Il progetto non è affiliato, sponsorizzato o approvato da alcun editore di
+videogiochi.
 
 ## Licenza
 
